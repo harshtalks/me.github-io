@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #d8e2dc;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 8em 12em;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--image {
+  height: 50vh;
+}
+
+.main--image img {
+  max-width: 150px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.mainStuff:focus,
+.mainStuff:active {
+  transform: rotate(10deg) scale(1.2);
+}
+
+.main--heading h1 {
+  font-size: 4rem;
+  width: 80%;
+  position: relative;
+  font-weight: 600;
+}
+
+.main--heading h1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  left: 0;
+  bottom: -2.5em;
+}
+
+.highlight {
+  color: #495057;
+  cursor: pointer;
+}
+
+.leftContent {
+  margin-right: 6em;
+}
+
+.rightContent {
+  margin-left: 6em;
+}
+
+.biography {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top--disc h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.top--disc blockquote {
+  font-size: 1.4rem;
+  width: 40%;
+  font-weight: 500;
+  margin-bottom: 7em;
+}
+
+.about {
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-bottom: 1em;
+  line-height: 1.9em;
+}
+.img--skills {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+  background-color: rgba(232, 232, 228, 0.5);
+}
+.img--skills img {
+  width: 50px;
+  background-color: rgba(232, 232, 228, 0.5);
+  cursor: pointer;
+}
+
+.box--skills {
+  margin: 7rem 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(232, 232, 228, 0.5);
+  position: relative;
+  cursor: pointer;
+}
+
+.box--skills::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  left: 0;
+  bottom: -10rem;
+  z-index: 2;
+}
+
+.email {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  border-bottom: 1px solid #6d6875;
+}
+
+.email h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+  cursor: "pointer";
+}
+
+.footer img {
+  width: 20px;
+  margin-right: 1em;
+}
+.footer {
+  display: flex;
+  padding-top: 1em;
+}
+
+.footer p {
+  font-size: 1.4rem;
+}
+.container {
+  transition: transform 0.5s ease-in-out;
+}
+.hover--box {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  background-color: #eddcd2;
+  width: 100%;
+  padding: 5rem 0;
+  transition: 0.5s ease-in-out;
+  transition-property: transform;
+}
+
+.head {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.top--greet {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 1em;
+}
+
+.head h2 {
+  font-size: 18rem;
+  font-family: "Cinzel", serif;
+  z-index: 5;
+}
+
+.image__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: -10rem;
+}
+
+.image__container img {
+  border-radius: 50%;
+  margin: 0 8rem;
+}
+
+.image__container p {
+  font-size: 3rem;
+}
+
+.highlighted {
+  color: #a5a58d;
+  font-family: "Tangerine", cursive;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project--head {
+  text-align: center;
+  font-family: "Tangerine", cursive;
+  font-size: 6rem;
+  margin-bottom: 1em;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 8rem;
+  font-family: "Cinzel", serif;
+  border-bottom: 1px solid black;
+}
+
+.left {
+  font-size: 40rem;
+}
+
+.spot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spot h2 {
+  font-size: 3rem;
+  margin-top: 1em;
+  font-family: "Tangerine", cursive;
+  color: #6d6875;
+}
+
+.close {
+  width: 40px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.close:hover,
+.close:active {
+  transform: rotate(-10deg) scale(1.5);
+}
+
+.displayBox {
+  transform: scale(0);
+}
