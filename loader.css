@@ -1,0 +1,60 @@
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  transition: all 0.25s ease-in-out;
+}
+
+.preloader-display {
+  display: none;
+  pointer-events: none;
+}
+
+.btn {
+  align-items: center;
+  background: #93e2cb;
+  border-radius: 4px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 1rem;
+  width: 160px;
+}
+
+svg#loader-pencil {
+  fill: #3a846e;
+  width: 80px;
+}
+
+#line {
+  -webkit-animation: linePencil 0.8s infinite linear;
+  animation: linePencil 0.8s infinite linear;
+}
+
+@-webkit-keyframes linePencil {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+@keyframes linePencil {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
